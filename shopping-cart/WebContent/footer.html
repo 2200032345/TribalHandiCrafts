@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Center</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/changes.css">
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    .container-fluid {
+        background-color: black;
+        color: white;
+        margin-top: 0px;
+    }
+    .container h3 {
+        color: white;
+    }
+    .text-center {
+        color: white;
+    }
+    .form-control {
+        background-color: #333;
+        color: white;
+    }
+    .form-control::placeholder {
+        color: white;
+    }
+    .btn {
+        background-color: #444;
+        color: white;
+        border: none;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+    <!-- Start the footer Contacts -->
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="text-center">Contact</h3>
+            <p class="text-center">
+                <em>We love to take your feedback</em>
+                <br><br>
+                <em>Feel free to type your honest report</em>
+            </p>
+            <div class="row test">
+                <div class="col-md-4">
+                    <p>Can Reach out to us at.</p>
+                    <p>
+                        <span class="glyphicon glyphicon-map-marker"></span> K L University
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-phone"></span> Phone: +91 86453 50200
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-envelope"></span> Email: tribalhandicrafts@kluniversity.in
+                    </p>
+                    <p>
+                        <span class="glyphicon glyphicon-copyright-mark"></span> Copy Rights - 2024
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <form action="fansMessage" method="post">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <button class="btn pull-right" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
